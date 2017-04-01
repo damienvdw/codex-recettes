@@ -1,0 +1,40 @@
+<%
+  function get_categories (post){
+    var categories = []
+    post.categories.forEach(function(category){
+        categories.push(category.name);
+    });
+    return categories.join(", ")
+  }
+%>
+
+
+<div class="col-md-8">
+  <h2 class="blog-post-title">Résultat de la recherche :</h2>
+  <hr>
+  <div id="search-results"></div>
+
+</div>
+<!-- Sidebar -->
+<div class="col-md-3 col-md-offset-1"><div class="well sidebar">
+  <%- partial('_partial/my_cat_list', {item: page}) %>
+</div></div>
+
+
+
+
+<script>
+  window.store = {
+    <% site.posts.forEach(function(post, index, array){ %>
+        "<%- config.root %><%- post.path %>": {
+          "title": <%- JSON.stringify(post.title) %>,
+          "category": <%- JSON.stringify(get_categories(post)) %>,
+          "content": <%- JSON.stringify(post.content.replace(/<\/?[^>]+(>|$)/g, "")) %>,
+          "url": "<%- config.root %><%- post.path %>"
+        }<% if (index !== site.posts.length - 1 ){ %>,<% } %>
+    <% }); %>
+  };
+</script>
+
+<%- js('js/lunr.min.js') %>
+<%- js('js/search.js') %>

@@ -1,0 +1,56 @@
+<%
+  var title = '';
+  if (page.category) title = page.category;
+  if (page.tag) title = page.tag;
+  if (page.archive){
+      if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+      else title = "Archives";
+  }
+
+  var other_cats = {};
+  var only_current_cat = function(post,index){
+    var is_valid = false;
+    if (page.category) {
+      if(post.categories.last().name === page.category ){
+        is_valid = true;
+      }
+      else{
+        other_cats[post.categories.last().name] = post.categories.last();
+      }
+    }
+    else{
+      is_valid = true;
+    }
+    return is_valid;
+  };
+  var the_filtered_posts = page.posts.sort('title').filter(only_current_cat);
+
+%>
+
+<!-- Main Content -->
+<div class="col-md-8">
+
+  <% if(title) { %>
+     <h2 class="blog-post-title"><%- title %></h2>
+     <hr>
+  <% } %>
+
+  <% Object.keys(other_cats).map(function(catKey, index) { %>
+    <div class="panel panel-default">
+      <a href="<%- config.root + other_cats[catKey].path %>">
+        <div class="panel-body bg-warning">
+          <span class="h4"><span class="glyphicon glyphicon-folder-open glyph-space-right"></span><%- other_cats[catKey].name %></span>
+        </div>
+      </a>
+    </div>
+  <% }); %>
+
+  <% the_filtered_posts.each(function(item){ %>
+      <%- partial('_partial/article-archive', {item: item}) %>
+  <% }); %>
+
+</div>
+<!-- Sidebar -->
+<div class="col-md-3 col-md-offset-1"><div class="well sidebar">
+  <%- partial('_partial/my_cat_list', {item: page}) %>
+</div></div>

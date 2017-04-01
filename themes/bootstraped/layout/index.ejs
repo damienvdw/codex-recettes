@@ -1,0 +1,23 @@
+<!-- Main Content -->
+<div class="col-md-12">
+
+  <h2 class="blog-post-title">Catégories principales :</h2>
+  <hr>
+
+<%
+  var query = {};
+  query.parent = {$exists: false}; // ENLEVER CETTE LIGNE POUR AJOUTER LES SOUS-CATÉGORIES
+
+  site.categories.find(query).sort('name').each(function(item){ %>
+
+    <div class="panel panel-default">
+      <a href="<%- config.root %><%- item.path %>">
+        <div class="panel-body bg-warning">
+          <span class="h4"><span class="glyphicon glyphicon-folder-open glyph-space-right"></span><%- item.name %></span>
+        </div>
+      </a>
+    </div>
+
+  <% }); %>
+
+</div>

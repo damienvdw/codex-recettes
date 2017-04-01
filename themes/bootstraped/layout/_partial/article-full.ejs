@@ -1,0 +1,15 @@
+<div class="blog-post">
+
+    <!-- Title -->
+    <h2 class="blog-post-title">
+      <%- item.title || item.link%>
+    </h2>
+
+    <!-- Categories and Tags links -->
+    <%- partial('article-categories', {item: item}) %>
+    <%- partial('article-tags', {item: item}) %>
+
+    <!-- Content -->
+    <%- item.content %>
+
+</div>

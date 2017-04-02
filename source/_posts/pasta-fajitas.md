@@ -1,6 +1,12 @@
 ---
 title : Pasta Fajitas
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1490571715/recettes/pasta-fajitas.jpg
+permalink: pasta-fajitas
+categories : Plat principal
+tags:
+- poulet
+- épicé
+- pâte
 ---
 
 **Portions :** 6

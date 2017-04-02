@@ -1,6 +1,11 @@
 ---
 title : Tartare de saumon
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Tartare-de-saumon_pf099l.jpg
+permalink: tartare-de-saumon
+categories : Plat principal
+tags:
+- poisson
+- froid
 ---
 
 **Portions :** 4

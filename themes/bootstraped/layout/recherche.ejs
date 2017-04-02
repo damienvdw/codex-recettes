@@ -6,6 +6,15 @@
     });
     return categories.join(", ")
   }
+
+  function get_tags (post){
+    var tags = []
+    post.tags.forEach(function(tag){
+        tags.push(tag.name);
+    });
+    return tags.join(" ")
+  }
+
 %>
 
 
@@ -29,6 +38,7 @@
         "<%- config.root %><%- post.path %>": {
           "title": <%- JSON.stringify(post.title) %>,
           "category": <%- JSON.stringify(get_categories(post)) %>,
+          "tags": <%- JSON.stringify(get_tags(post)) %>,
           "content": <%- JSON.stringify(post.content.replace(/<\/?[^>]+(>|$)/g, "")) %>,
           "url": "<%- config.root %><%- post.path %>"
         }<% if (index !== site.posts.length - 1 ){ %>,<% } %>

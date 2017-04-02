@@ -1,6 +1,12 @@
 ---
 title : Saumon Miel et Sriracha
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Saumon-Miel-et-Sriracha_ycxfjz.jpg
+permalink: saumon-miel-et-sriracha
+categories : Plat principal
+tags:
+- poisson
+- épicé
+- riz
 ---
 
 **Portions :** 4

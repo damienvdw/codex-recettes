@@ -1,7 +1,14 @@
 ---
 title : Boeuf Bourguignon
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Boeuf-Bourguignon_xoivyg.jpg
+permalink: boeuf-bourguignon
+categories : Plat principal
+tags:
+- boeuf
+- champignon
+- vin
 ---
+
 
 **Portions :** ?
 

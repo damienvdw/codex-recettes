@@ -1,6 +1,12 @@
 ---
 title : Filet de truite au cari
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Filet_de_truite_au_cari_vbn9xf.jpg
+permalink: filet-de-truite-au-cari
+categories : Plat principal
+tags:
+- poisson
+- miel
+- riz
 ---
 
 **Portions :** 6

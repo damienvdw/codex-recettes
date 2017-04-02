@@ -39,6 +39,7 @@
       this.field('id');
       this.field('title', { boost: 10 });
       this.field('category');
+      this.field('tags', { boost: 10 });
       this.field('content');
     });
 
@@ -47,6 +48,7 @@
         'id': key,
         'title': window.store[key].title,
         'category': window.store[key].category,
+        'tags': window.store[key].tags,
         'content': window.store[key].content
       });
 

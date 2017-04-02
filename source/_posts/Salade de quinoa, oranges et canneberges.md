@@ -1,6 +1,14 @@
 ---
 title : Salade de quinoa, oranges et canneberges
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Salade-de-quinoa_-oranges-et-canneberges_bg1oxe.jpg
+permalink: salade-de-quinoa-oranges-et-canneberges
+categories : Plat principal
+tags:
+- salade
+- quinoa
+- orange
+- canneberge
+- concombre
 ---
 
 **Portions :** 6

@@ -1,6 +1,13 @@
 ---
 title : Spaghetti Carbonara
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Spaghetti-Carbonara_wrj2yg.jpg
+permalink: spaghetti-carbonara
+categories : Plat principal
+tags:
+- pâte
+- bacon
+- fromage
+- crème
 ---
 
 **Portions :** 4

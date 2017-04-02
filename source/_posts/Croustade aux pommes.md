@@ -1,6 +1,10 @@
 ---
 title : Croustade aux pommes
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Croustade-aux-pommes_kxrfi9.jpg
+permalink: croustade-aux-pommes
+categories : Dessert
+tags:
+- pomme
 ---
 
 **Portions :** 6

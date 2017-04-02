@@ -1,6 +1,11 @@
 ---
 title : Orzo aux crevettes et citron
 image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Orzo-aux-crevettes-et-citron_jykaj0.jpg
+permalink: orzo-aux-crevettes-et-citron
+categories : Plat principal
+tags:
+- crevette
+- orzo
 ---
 
 **Portions :** 4

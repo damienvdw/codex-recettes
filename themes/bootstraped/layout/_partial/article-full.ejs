@@ -5,8 +5,6 @@
       <%- item.title || item.link%>
     </h2>
 
-    <img src=“<%- item.image %>”>
-
     <!— Categories and Tags links —>
     <%- partial(‘article-categories’, {item: item}) %>
     <%- partial(‘article-tags', {item: item}) %>

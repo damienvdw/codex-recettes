@@ -2,10 +2,10 @@
 
     <!-- Title -->
     <h2 class="blog-post-title">
-      <%- item.title || item.link%>
+      <%- item.title || item.link %>
     </h2>
 
-    <img src=“<%- item.image %>”>
+    <img src=“<%= item.image %>”>
 
     <%- partial(‘article-categories’, {item: item}) %>
     <%- partial(‘article-tags', {item: item}) %>

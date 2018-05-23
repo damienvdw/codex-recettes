@@ -1,0 +1,33 @@
+{{ define "block_title" }}
+  <title>Carnet de recettes</title>
+{{ end }}
+
+{{ define "block_main" }}
+  <div class="col-md-12">
+    <div class="blog_layout">
+      <section class="blog_main">
+        <h2 class="blog-post-title">
+          Services :
+        </h2>
+        <hr>
+        <div class="post_list">
+          {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+            {{ if eq $taxonomyname "Service" }}
+              {{ range $key, $value := $taxonomy }}
+                <div class="panel panel-default">
+                  <a href="{{ $taxonomyname | urlize }}/{{ $key | urlize }}">
+                    <div class="panel-body bg-warning">
+                      <span class="h4">
+                        <span class="glyphicon glyphicon-folder-open glyph-space-right"></span>{{ $key }}
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </section>
+    </div>
+  </div>
+{{ end }}

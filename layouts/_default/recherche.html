@@ -1,0 +1,63 @@
+{{ define "block_title" }}
+  <title>Recherche | Carnet de recettes</title>
+{{ end }}
+
+{{ define "block_main" }}
+
+  <div class="col-md-8">
+    <div class="blog-post">
+      <!-- Title -->
+      <h2 class="blog-post-title">
+        Résultat de la recherche :
+      </h2>
+      <hr>
+      <div id="search-results"></div>
+
+    </div>
+  </div>
+
+  <div class="col-md-3 col-md-offset-1">
+    <div class="well sidebar">
+      <h3>Services</h3>
+      <ul class="category-list">
+        {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+          {{ if eq $taxonomyname "Service" }}
+            {{ range $key, $value := $taxonomy }}
+              {{ if ne $key $.Title }}
+                <li class="category-list-item">
+                  <a
+                    class="category-list-link {{ if eq $key $.Params.service }}current{{ end }}"
+                    href="/{{ $taxonomyname | urlize }}/{{ $key | urlize }}">
+                    {{ $key }}
+                  </a>
+                </li>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+
+    </div>
+  </div>
+
+  <script>
+    window.store = {
+      {{ $list := (where .Site.Pages ".Params.service" "!=" nil) }}
+      {{ $len := (len $list) }}
+      {{ range $index, $element := $list }}
+        "{{.URL}}" : {
+          "title" : "{{.Title}}",
+          "category" : "{{ delimit .Params.tags " " }}",
+          "tags" : "{{ .Params.service }}",
+          "content" : "{{ replaceRE "</?[^>]+(>|$)" "" .Content }}",
+          "url" : "{{.URL}}"
+        }{{if ne (add $index 1) $len }}, {{ end }}
+      {{ end }}
+    };
+  </script>
+
+  <script src="/js/lunr.min.js"></script>
+  <script src="/js/search.js"></script>
+
+
+{{ end }}

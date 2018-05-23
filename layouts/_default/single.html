@@ -1,0 +1,91 @@
+{{ define "block_title" }}
+  <title>{{.Title}} | Carnet de recettes</title>
+{{ end }}
+
+{{ define "block_main" }}
+
+      <div class="col-md-8">
+        <div class="blog-post">
+          <!-- Title -->
+          <h2 class="blog-post-title">
+            {{ .Title }}
+          </h2>
+
+          {{ with .Params.service }}
+            <div class="blog-tags-container">
+              <span class="glyphicon glyphicon-folder-open"></span>
+                <a href="{{ "/service/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            </div>
+          {{ end }}
+
+          {{ if .Params.tags }}
+            <div class="blog-tags-container">
+              <span class="glyphicon glyphicon-tags"></span>
+              {{ range $index, $tags := .Params.tags }}
+                {{ if gt $index 0 }}-{{ end }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-offset-1">
+        <img class="blog-post-img" src="{{ .Params.image }}" alt="{{ .Title }}">
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="blog-post">
+          {{ .Content }}
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-offset-1">
+        <div class="well sidebar">
+          <h3>Services</h3>
+          <ul class="category-list">
+            {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+              {{ if eq $taxonomyname "Service" }}
+                {{ range $key, $value := $taxonomy }}
+                  <li class="category-list-item">
+                    <a
+                      class="
+                            category-list-link
+                            {{ if eq $key $.Params.service }}current{{ end }}
+                            "
+                      href="/{{ $taxonomyname | urlize }}/{{ $key | urlize }}">
+                      {{ $key }}
+                    </a>
+                  </li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+
+
+          {{ $list := (where .Site.Pages ".Params.service" .Params.service) }}
+          {{ $len := (len $list) }}
+          {{ if gt $len 1 }}
+            <h3>Autre {{ lower .Params.service }} :</h3>
+            <ul>
+              {{ range $list }}
+                {{ if ne .Title $.Title }}
+                <li>
+                  <a href="{{.URL}}">
+                    {{.Title}}
+                  </a>
+                </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+{{ end }}

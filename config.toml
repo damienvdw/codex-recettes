@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "fr"
+title = "Carnet de recettes"
+preserveTaxonomyNames = true
+[taxonomies]
+  service = "Service"
+  tags = "Tags"

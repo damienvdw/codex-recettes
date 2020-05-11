@@ -1,7 +1,7 @@
 ---
-title : Tartare de saumon, crevette et mangue
+title : Salade de pates à la goberge
 image : https://res.cloudinary.com/damienvdw/image/upload/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
-permalink: tartare-de-saumon-crevette-mangue
+permalink: salade-pates-goberge
 service : Plats principaux
 tags:
 - poisson

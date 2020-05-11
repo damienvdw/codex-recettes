@@ -1,12 +1,13 @@
 ---
-title : Boeuf Coréen
-image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Boeuf-Coréen_erqd5x.jpg
+title: Boeuf Coréen
+image: https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/Boeuf-Coréen_erqd5x.jpg
+image2: https://res.cloudinary.com/damienvdw/image/upload/v1487858572/recettes/Boeuf-Core%CC%81en_erqd5x.jpg
 permalink: boeuf-coreen
-service : Plats principaux
+service: Plats principaux
 tags:
-- boeuf
-- riz
-- épicé
+  - boeuf
+  - riz
+  - épicé
 ---
 
 **Portions :** 4

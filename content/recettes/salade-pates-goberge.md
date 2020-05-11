@@ -1,12 +1,12 @@
 ---
-title : Salade de pates à la goberge
-image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
+title: Salade de pates à la goberge
+image: https://res.cloudinary.com/damienvdw/image/upload/c_scale,w_600/f_auto/v1589223278/recettes/Seafood-Corn-Pasta-Salad14.jpg
 permalink: salade-pates-goberge
-service : Plats principaux
+service: Plats principaux
 tags:
-- poisson
-- froid
-- pâtes
+  - poisson
+  - froid
+  - pâtes
 ---
 
 **Portions :** 4

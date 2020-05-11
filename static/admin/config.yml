@@ -6,6 +6,8 @@ media_library:
   config:
     cloud_name: damienvdw
     api_key: 695141127517874
+    default_transformations:
+      - - fetch_format: auto
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:

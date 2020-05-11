@@ -1,6 +1,6 @@
 ---
 title: Boeuf Coréen
-image: https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858935/sample.jpg
+image: https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858572/recettes/Boeuf-Core%CC%81en_erqd5x.jpg
 permalink: boeuf-coreen
 service: Plats principaux
 tags:

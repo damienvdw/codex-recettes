@@ -1,6 +1,11 @@
 backend:
   name: git-gateway
   branch: master
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: damienvdw
+    api_key: 695141127517874
 media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 collections:

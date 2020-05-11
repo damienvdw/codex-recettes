@@ -1,6 +1,6 @@
 ---
 title : Salade de pates à la goberge
-image : https://res.cloudinary.com/damienvdw/image/upload/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
+image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
 permalink: salade-pates-goberge
 service : Plats principaux
 tags:

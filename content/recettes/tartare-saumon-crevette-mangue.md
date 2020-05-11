@@ -1,6 +1,6 @@
 ---
 title : Tartare de saumon, crevette et mangue
-image : https://res.cloudinary.com/damienvdw/image/upload/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
+image : https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1549423039/recettes/tartare-de-saumon-crevette-mangue.jpg
 permalink: tartare-de-saumon-crevette-mangue
 service : Plats principaux
 tags:

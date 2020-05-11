@@ -1,7 +1,6 @@
 ---
 title: Roti au beurre à l'ail
 image: https://res.cloudinary.com/damienvdw/image/upload/f_auto/v1487858573/recettes/boeuf-beurre-ail_o1gurk.jpg
-image2: https://res.cloudinary.com/damienvdw/image/upload/v1487858572/recettes/boeuf-beurre-ail_o1gurk.jpg
 permalink: roti-au-beurre-a-ail
 service: Plats principaux
 tags:
